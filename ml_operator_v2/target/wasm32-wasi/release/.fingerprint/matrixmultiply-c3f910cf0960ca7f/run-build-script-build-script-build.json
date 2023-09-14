@@ -1,0 +1,1 @@
+{"rustc":12970975996024363646,"features":"","target":0,"profile":0,"path":0,"deps":[[10729111638291843939,"build_script_build",false,3534678386633323950]],"local":[{"RerunIfChanged":{"output":"wasm32-wasi/release/build/matrixmultiply-c3f910cf0960ca7f/output","paths":["build.rs"]}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}

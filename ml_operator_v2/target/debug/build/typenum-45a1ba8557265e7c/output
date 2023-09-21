@@ -1,3 +1,0 @@
-cargo:rerun-if-changed=build/main.rs
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/guoqing/Galois/ml_operator_v2/target/debug/build/typenum-45a1ba8557265e7c/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/home/guoqing/Galois/ml_operator_v2/target/debug/build/typenum-45a1ba8557265e7c/out/op.rs

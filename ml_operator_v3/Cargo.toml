@@ -1,0 +1,2 @@
+[workspace]
+members = ["run_wasm", "ml_pytorch","ml_pytorch_lib"]

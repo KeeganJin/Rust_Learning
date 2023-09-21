@@ -2,15 +2,25 @@ use std::time::Instant;
 use wasmedge_bindgen::*;
 use wasmedge_bindgen_macro::*;
 use wasmedge_tensorflow_interface;
-
 use serde::{Deserialize, Serialize};
 
 
-
-
-
+//pytorch_infer is just for testing if it can be called from the host code.
 #[wasmedge_bindgen]
-pub fn infer(image_data: Vec<u8>) -> Result<Vec<u8>, String> {
+pub fn pytorch_infer(image_data: Vec<u8>) -> Vec<u8> {
+    
+    //model loading. (path)
+    //inference context creating..
+    //inference performing... here we 
+    let result = image_data.clone();
+    println!("the pytorch_infer is invoked correctly");
+    return result;
+
+}
+
+//tf_infer is based on a yomo go example, the lib.rs designed in that 
+#[wasmedge_bindgen]
+pub fn tf_infer(image_data: Vec<u8>) -> Result<Vec<u8>, String> {
     let start = Instant::now();
 
     let model_data: &[u8] = include_bytes!("lite-model_aiy_vision_classifier_food_V1_1.tflite");
